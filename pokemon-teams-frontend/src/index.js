@@ -62,18 +62,17 @@ document.addEventListener('DOMContentLoaded', () => {
           });
 
         } else alert("You already have 6 Pokemon");
-      }
+      } else if (event.target.className === 'release'){
+          fetch(`${POKEMONS_URL}/${event.target.dataset.pokemonId}`, {
+            method: 'DELETE'
+          })
+          .then(resp => resp.json())
+          .then(pokemon => {
+            event.target.parentElement.remove()
+          })
+        }
     });
+    
 
-
-  });
-
-  // document.addEventListener('click', (event) => {
-  //   const button = document.querySelector('button')
-  //   if (event.target === button){
-  //     console.log("button found")
-  //   }
-
-  // });  
-
+  }); 
 });
