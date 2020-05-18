@@ -9,10 +9,29 @@ release one of their Pokemon first.
 ![Showing how the application runs from loading, adding Pokemon to a team and also releasing one](/pokemon-teams-frontend/assets/pokemon_teams.gif)
 
 ## Requirements
-- When a user loads the page, they should see all
+- √ When a user loads the page, they should see all
   trainers, with their current team of Pokemon.
+-- √ add 'DOMContentLoaded' event on document when page loads
+-- √ fetch function to get data from API
+-- √ find parent element ('main'); assign to node
+-- √ iterate through data
+  -- √ create card node ('div class='card'')
+  -- √ add data to card
+  -- √ append card to main
+ 
+
+
+
 - Whenever a user hits `Add Pokemon` and they have
   space on their team, they should get a new Pokemon.
+
+-- √ find button element, assign to node
+-- √ add 'click' event to button
+  -- √ if pokemon list < 6:
+    -- √ fetch (POST) to create new pokemon
+    -- √ append pokemon to ul
+
+
 - Whenever a user hits `Release Pokemon` on a specific
   Pokemon team, that specific Pokemon should be released from
   the team.
@@ -46,7 +65,7 @@ you want to make sure you go to your Terminal and run the following code below:
 
 You will want to make sure this is running in a terminal. When you're making requests you will
 make it to `http://localhost:3000` as the base url. The documentation below should show you how
-to utilize every API endpoint necessary to build the application.
+to utilize every API endpoint necessary to build the application. 
 
 ### Getting All Trainers and their Pokemon
 
